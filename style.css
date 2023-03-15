@@ -1,0 +1,556 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.container{
+    margin: auto;
+  
+    font-size: 2rem;
+    display: block;}
+pre{
+   position: relative;
+   top:0px;
+text-align: center;
+
+ color:white;
+ animation: road .3s infinite linear;
+}
+@keyframes road{
+    from{
+        top: 0px;
+    }
+    to{
+        top:100px;
+        
+    }
+}
+.taxi{
+    top:25px;
+    left:47%;
+    background-color: #FFEA00;
+    position: absolute;
+    width:80px;
+    height: 130px;
+    /* border:1px solid red; */
+    border-radius: 5px;
+    /* outline: 5px solid black; */
+    animation: taxi 1s  infinite linear;
+}
+@keyframes taxi{
+    0%{
+        top:23px;
+        left:47.5%;
+    }
+    10%{
+        top:21px;
+        left:48%;
+    }
+    20%{
+        top:19px;
+        left:48.5%;
+    }
+    30%{
+        top:17px;
+        left:49%;
+    }
+    40%{
+        top:15px;
+        left:49.5%;
+    }
+    50%{
+        top:13px;
+        left:50%;
+    }
+    60%{
+        top:15px;
+        left:49.5%;
+    }
+    70%{
+        top:17px;
+        left:49%;
+    }
+    80%{
+        top:19px;
+        left:48.5%;
+    }
+    90%{
+        top:21px;
+        left:48%;
+    }
+    100%{
+        top:23px;
+        left:47.5;
+    }
+}
+.taxi-light{
+    margin-left:9px ;
+    height: 10px;
+    width:80%;
+    border-radius: 5px;
+    background-color:#FFD700;
+   display: flex;
+   justify-content: space-between;
+}
+.taxi-left-head-light{
+    width:25%;
+    height: 8px;
+    border:1px solid white;
+    background-color: white;
+    
+}
+.taxi-light-back{
+    margin-left:9px ;
+    height: 10px;
+    width:80%;
+    border-radius: 5px;
+    background-color: #FFD700;
+   display: flex;
+   justify-content: space-between;
+}
+.taxi-left-back-light{
+    margin: 2px;
+    width:25%;
+    height: 8px;
+    border:1px solid red;
+    background-color: red;
+}
+.car-top{
+    margin-left: 2px;
+    background-color: #FFBF00;
+    width:95%;
+    height: 85%;
+    padding-top:15px ;
+    padding-left: 3px;
+}
+.taxi-front-glass{
+
+    border-bottom: 12px solid transparent;
+border-Top: 12px solid transparent;
+border-left: 16px solid black;
+width: 96%;
+height: 63px;
+transform: rotate(90deg);
+color: black;
+border-radius: 2px;
+}
+.taxi-side-glass1{
+    border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 6px solid black;
+width: 39%;
+height: 34px;
+transform: rotate(0deg);
+color: black;
+position: relative;
+left: 1px;
+top: -60px;
+}
+.taxi-side-glass2{
+    border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 6px solid black;
+width: 39%;
+height: 34px;
+transform: rotateX(150deg);
+color: black;
+position: relative;
+left: 1px;
+top: -60px;
+
+}
+.taxi-back-glass{
+    border-bottom: 12px solid transparent;
+border-Top: 12px solid transparent;
+border-left: 16px solid black;
+width: 96%;
+height: 63px;
+color: black;
+border-radius: 2px;
+transform: rotateZ(-90deg);
+position: relative;
+top: -120px;
+}
+.taxi-side-glass3{
+    border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 6px solid black;
+width: 39%;
+height: 30px;
+transform: rotate(180deg);
+color: black;
+position: relative;
+left: 40px;
+top: -155px;
+}
+.taxi-side-glass4{
+    border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 6px solid black;
+width: 39%;
+height: 34px;
+transform: rotateY(180deg);
+color: black;
+position: relative;
+left: 40px;
+top: -221px;
+}
+.taxi-name{
+border: 1px solid black;
+position: relative;
+top: -80px;
+background: white;
+font-size: 1rem;
+text-align: center;
+width: 54%;
+left: 18px;
+}
+.left-side-mirror{
+width: 8px;
+height: 5px;
+position: relative;
+top: -123px;
+left: -6px;
+background-color: yellow;
+border-radius: 8px;
+}
+.right-side-mirror{
+width: 8px;
+height: 5px;
+position: relative;
+top: -128px;
+left: 78px;
+background-color: yellow;
+border-radius: 8px;
+}
+.taxi-head-light-ref1{
+
+width: 20%;
+height: 39px;
+position: relative;
+top: -200px;
+left: 9px;
+background: linear-gradient(gray,white,gray);
+
+}
+.taxi-head-light-ref2{
+
+width: 20%;
+height: 39px;
+position: relative;
+top: -239px;
+left: 57px;
+background: linear-gradient(gray,white,gray);
+
+}
+.police1{
+top: 247px;
+left: 60%;
+    background-color: #36454F;
+    position: absolute;
+    width:80px;
+    height: 140px;
+  animation: police1 1.5s infinite linear;
+    border-radius: 5px;     
+}
+@keyframes police1{
+0%{
+top:245px;
+left:58%;
+}10%{
+top:243px;
+left:56%;
+}20%{
+top:241px;
+left:54%;
+}30%{
+top:239px;
+left:52%;
+}40%{
+top:237px;
+left:50%;
+}
+50%{
+top:234px;
+left:48%;
+
+}60%{
+top:237px;
+left:50%;
+}70%{
+top:239px;
+left:52%;
+}80%{
+top:241px;
+left:54%;
+}90%{
+top:243px;
+left:56%;
+}
+100%{
+top:246px;
+left:58%;
+}
+}
+.police-light{
+margin-left:9px ;
+    height: 10px;
+    width:80%;
+    border-radius: 5px;
+    background-color: #71797E;
+   display: flex;
+   justify-content: space-between;
+}
+.police-left-head-light{
+
+width:25%;
+    height: 8px;
+    border:1px solid white;
+    background-color: white;
+    
+}
+.police-car-top{
+margin-top: 21px;
+margin-left: 6px;
+background-color: white;
+width: 85%;
+height: 60%;
+padding-top: 15px;
+}
+.police-front-glass{
+border-bottom: 12px solid transparent;
+border-Top: 12px solid transparent;
+border-left: 16px solid black;
+width: 96%;
+height: 63px;
+transform: rotate(90deg);
+color: black;
+border-radius: 2px;
+position: relative;
+top: -14px;
+}
+.police-side-glass1{
+border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 10px solid black;
+width: 39%;
+height: 34px;
+transform: rotate(0deg);
+color: black;
+position: relative;
+left: 0px;
+top: -70px;
+}
+.police-side-glass2{
+border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 10px solid black;
+width: 39%;
+height: 34px;
+transform: rotateX(150deg);
+color: black;
+position: relative;
+left: 0px;
+top: -68px;
+}
+.police-back-glass{
+border-bottom: 12px solid transparent;
+border-Top: 12px solid transparent;
+border-left: 16px solid black;
+width: 96%;
+height: 63px;
+color: black;
+border-radius: 2px;
+transform: rotateZ(-90deg);
+position: relative;
+top: -126px;
+}
+.police-side-glass3{
+border-bottom: 0px solid transparent;
+border-Top: 10px solid transparent;
+border-left: 10px solid black;
+width: 39%;
+height: 30px;
+transform: rotate(180deg);
+color: black;
+position: relative;
+left: 42px;
+top: -162px;
+}
+.police-side-glass4{
+border-bottom: 0px solid transparent;
+border-Top: 9px solid transparent;
+border-left: 10px solid black;
+width: 39%;
+height: 34px;
+transform: rotateY(180deg);
+color: black;
+position: relative;
+left: 42px;
+top: -231px;
+}
+.police-light-back{
+margin-left:9px ;
+    height: 10px;
+    width:80%;
+    border-radius: 5px;
+    background-color: #71797E;
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+top: 15px;
+}
+.police-left-back-light{
+margin: 2px;
+    width:25%;
+    height: 8px;
+    border:1px solid red;
+    background-color: red;
+}
+.police-name{
+position: relative;
+top: -61px;
+background: white;
+font-size: 1rem;
+text-align: center;
+width: 54%;
+left: 18px;
+}
+.police-left-side-mirror{
+width: 8px;
+height: 5px;
+position: relative;
+top: -123px;
+left: -6px;
+background-color: white;
+border-radius: 8px;
+}
+.police-right-side-mirror{
+width: 8px;
+height: 5px;
+position: relative;
+top: -128px;
+left: 78px;
+background-color: white;
+border-radius: 8px;
+}
+.police-head-light-ref1{
+width: 20%;
+height: 39px;
+position: relative;
+top: -192px;
+left: 9px;
+background: linear-gradient(gray,white,gray);
+}
+.police-head-light-ref2{
+width: 20%;
+height: 39px;
+position: relative;
+top: -231px;
+left: 57px;
+background: linear-gradient(gray,white,gray);
+}
+.sliceners{
+width: 21%;
+height: 10px;
+background-color: red;
+top: -178px;
+left: 30px;
+position: relative;
+border-radius: 3px;
+}
+.blue{
+background-color: blue;
+width: 33%;
+position: relative;
+border-top-left-radius: 3px;
+border-bottom-left-radius: 3px;
+height: 100%;
+left: 0px;
+}
+.black{
+background-color: black;
+width: 34%;
+height: 100%;
+position: relative;
+left: 5px;
+top: -10px;
+
+}
+.red{
+background-color: red;
+width: 33%;
+
+}
+.police-tittle{
+position: relative;
+left: 17px;
+top: -126px;
+font-size: 0.8rem;
+color: white;
+}
+.police-title1{
+transform: rotatez(180deg);
+position: relative;
+left: -17px;
+top: -244px;
+font-size: 0.8rem;
+color: white;
+}
+.police2{
+top: 454px;
+left: 39%;
+    background-color: #36454F;
+    position: absolute;
+    width:80px;
+    height: 140px;
+  animation: police2 1.5s infinite linear;
+    border-radius: 5px;
+}
+@keyframes police2{
+0%{
+top:452px;
+left:41%;
+}10%{
+top:450px;
+left:43%;
+}20%{
+top:448px;
+left:45%;
+}30%{
+top:446px;
+left:47%;
+}40%{
+top:444px;
+left:49%;
+}
+50%{
+top:442px;
+left:51%
+}60%{
+top:444px;
+left:49%;
+}
+70%{
+top:446px;
+left:47%;
+}
+80%{
+top:448px;
+left:45%;
+}
+90%{
+top:450px;
+left:43%;
+}
+100%{
+top:452px;
+left:41%;
+}
+}
